@@ -1,10 +1,6 @@
 /* Add a black background color to the top navigation */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.topnav {
-    background-color: white;
-    
+  font-family: "Times New Roman", Helvetica, sans-serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -17,7 +13,7 @@ body {
   box-shadow: 1px 0px 1px;
   font-size: 17px;
   width: 100%;
-  color: black;
+  color: green;
 }
 /*Change logo*/
 .topnavlogo {
@@ -95,6 +91,7 @@ button {
   background-color: white;
   border: none;
   cursor: pointer;
+  color: green;
 }
 
 .btn{

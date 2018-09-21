@@ -26,23 +26,25 @@ body {
 button {
     margin: 0 50px;
     font-size: 17px;
+    color: green;
     padding: 10px 20px;
     background-color: white;
     border: none;
     cursor: pointer;
 }
 .sign-up {
-    border: 2px solid grey;
-    border-radius: 15%;
-    background-color: green;
-    padding: 10px 10px;
-    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: springgreen;
+    font-size: 22px;
+    color: white;
+    margin-left: 400px;
+    margin-top: -100px;
 }
 
-form {
-    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), url("https://image.shutterstock.com/image-photo/chinese-food-dark-background-noodles-260nw-446808091.jpg");
+.form {
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), url("pics/fruits.jpeg");
     background-size: cover;
-    height: 100vh;
+    height: 105vh;
     border: 1px solid black;
 }
 
@@ -53,7 +55,7 @@ fieldset {
 
 h2 {
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 300px;
     margin-bottom: 30px;
     font-size: 30px;
     padding-top: 20px;
@@ -74,3 +76,20 @@ input {
 a {
     color: black;
 }
+
+.name {
+    margin-left: 142px;
+}
+
+.adress {
+    margin-left: 124px;
+}
+
+.website {
+    margin-left: 113px;
+}
+
+.food {
+    margin-left: 113px;
+}
+
