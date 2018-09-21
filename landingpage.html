@@ -8,22 +8,23 @@
 
 <body>
   <div class="topnav">
-    <a href="#Advantages">Your Advantages</a>
-    <a href="#Organization">Register as Organization</a>
-    <a href="#Donator">Register as Donator</a>
-    <a href="#about">About</a>
-    <img class ="topnavlogo" src="pics/beats.png" alt="logo" >
+    <div class = "col-lg-3"><a href = "#problem"><button> The Problem </button></a></div>
+    <div class = "col-lg-3"><a href = "#solution"><button> The Solution </button></a></div>
+    <div class = "col-lg-3"><a href = "#your_advantages"><button> Your Advantages </button></a></div>
+    <div class = "col-lg-3"><a href = "registration_page2.html"><button> Register as Organization </button></a></div>
+    <div class = "col-lg-3"><a href = "registration_page1.html"><button> Register as Donator </button></a></div>
+    <div class = "col-lg-3"><img class ="topnavlogo" src="pics/beats.png" alt="logo" > </div>
   </div>
 
   <div class="opener">
     <b>
-    <a href="https://www.w3schools.com"><button class="btn1 btn-primary">Sign Up Now</button></a>
+    <a href="#sign-up"><button class="btn1 btn-primary">Sign Up Now</button></a>
   </div>
 
   <div class="container-fluid">
     <div class = "row content1">
       <div class = "col-md-1"></div>
-      <div class = "col-md-5">
+      <div class = "col-md-5" id = "problem">
         <ul> The Problem
           <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
           <li>sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -46,7 +47,7 @@
           <div class ="col-md-5">
         <img src="pics/text2.png"/>
           </div>
-          <div class = "col-md-5">
+          <div class = "col-md-5" id = "solution">
             <ul> The Solution
               <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -61,13 +62,13 @@
           </div>
         </div>
 
-      <div class="row content3">
+      <div class="row content3" id = "your_advantages">
         <h1>Your Advantages</h1>
         <img class = "advantages" src = "pics/advantages.png">
-        <nav>
-        <button class="btn btn-primary">Sign Up as Food Donator</button>
-        <button class="btn btn-primary">Sign Up as Organization</button>
-      </nav>
+        <nav id = "sign-up">
+          <a href = "registration_page1.html"><button class="btn btn-primary">Sign Up as Food Donator</button></a>
+          <a href = "registration_page2.html"><button class="btn btn-primary">Sign Up as Organization</button></a>
+        </nav>
       </div>
     </div>
 

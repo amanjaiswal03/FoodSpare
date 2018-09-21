@@ -4,17 +4,20 @@ body {
 }
 .topnav {
     background-color: white;
-    overflow: hidden;
+    
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.topnav  {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid grey;
+  box-shadow: 1px 0px 1px;
+  font-size: 17px;
+  width: 100%;
+  color: black;
 }
 /*Change logo*/
 .topnavlogo {
@@ -22,7 +25,7 @@ body {
     width: 50px;
     height: 50px;
     padding: 0px;
-    margin-left: 600px;
+    margin-left: 100px;
 }
 /*Change opener*/
 .opener {
@@ -59,9 +62,11 @@ body {
   background-color: #FAFAFA;
 }
 ul {
+
   font-size: 30px;
 }
 li {
+
   font-size: 20px;
   margin-top: 15px;
 }
@@ -83,6 +88,14 @@ li {
 nav{
   text-align: center;
 }
+button {
+  margin: 0 10px;
+  font-size: 17px;
+  padding: 10px 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
 
 .btn{
   padding-top: 20px;
@@ -98,4 +111,8 @@ nav{
 
  h1 {
   text-align: center;
+ }
+
+ a {
+   color: black;
  }
