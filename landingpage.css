@@ -1,0 +1,101 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    font-family:Arial;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*Change logo*/
+.topnavlogo {
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 600px;
+}
+/*Change opener*/
+.opener {
+    background-image: url(pics/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+  }
+.btn1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: springgreen;
+  font-size: 22px;
+  margin-top: 345px;
+  margin-left: 45px;
+}
+
+
+.centered-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%; -50%;)
+}
+
+.content1 {
+  margin-top: 50px;
+}
+
+.content2 {
+  margin-top: 50px;
+  background-color: #FAFAFA;
+}
+ul {
+  font-family: Arial;
+  font-size: 30px;
+}
+li {
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.content3{
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(pics/fruits.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+
+.advantages {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+nav{
+  text-align: center;
+}
+
+.btn{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: springgreen;
+  font-size: 22px;
+  margin-top: 75px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+ h1 {
+  text-align: center;
+ }
