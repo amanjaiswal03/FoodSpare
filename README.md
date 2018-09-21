@@ -1,3 +1,0 @@
-# FoodSpare
-
-hello
