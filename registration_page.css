@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 html {
     height: 100vh;
@@ -42,7 +42,7 @@ button {
 }
 
 .form {
-    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), url("pics/fruits.jpeg");
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.4)), url("pics/fruits.jpeg");
     background-size: cover;
     height: 105vh;
     border: 1px solid black;
