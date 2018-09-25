@@ -9,11 +9,10 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid grey;
+  border: 2px solid black;
   box-shadow: 1px 0px 1px;
   font-size: 17px;
   width: 100%;
-  color: green;
 }
 /*Change logo*/
 .topnavlogo {
@@ -92,7 +91,7 @@ button {
   background-color: white;
   border: none;
   cursor: pointer;
-  color: green;
+  color: black;
 }
 
 .btn{
