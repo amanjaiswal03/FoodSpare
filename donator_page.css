@@ -1,0 +1,27 @@
+* {
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
+
+.nav {
+    height: 60px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px 10px;
+    padding: 40px 10px;
+    border: none;
+    size: 30px;
+    color: black;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+input {
+    border-radius: 10%;
+}
