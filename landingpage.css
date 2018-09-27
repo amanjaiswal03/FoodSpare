@@ -54,15 +54,13 @@ body {
 }
 
 .content2 {
-  margin-top: 50px;
   background-color: #FAFAFA;
 }
 ul {
-
+  margin-top: 50px;
   font-size: 30px;
 }
 li {
-
   font-size: 20px;
   margin-top: 15px;
 }
@@ -78,7 +76,6 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
 }
 
 nav{
