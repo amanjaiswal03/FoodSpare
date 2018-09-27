@@ -18,8 +18,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid grey;
-    box-shadow: 1px 0px 1px;
     font-size: 17px;
     color: black;
 }
@@ -35,11 +33,12 @@ button {
     border: none;
     cursor: pointer;
 }
-.sign-up {
+#login {
     padding: 10px 20px;
-    background-color: springgreen;
+    background-color: #63C02D;
     font-size: 22px;
     color: white;
+    margin-right: 90px;
 }
 
 .form {
@@ -54,10 +53,7 @@ fieldset {
     font-size: 25px;
     padding: 50px;
 }
-.inline {
-    display: inline-block;
-      margin-left: 40px;
-}
+
 
 input {
   width: 500px;
@@ -80,6 +76,10 @@ form {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.account {
+    disply: inline-block;
 }
 
 

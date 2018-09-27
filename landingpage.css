@@ -10,7 +10,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid black;
+  
   box-shadow: 1px 0px 1px;
   font-size: 17px;
   width: 100%;
@@ -57,7 +57,7 @@ body {
 
 .content1 {
   display: flex;
-  max-height: 450px;
+  min-height: 500px;
   align-items: center;
   justify-content: center;
 }
@@ -65,12 +65,11 @@ body {
 .content2 {
   display: flex;
   background-color: #FAFAFA;
-  height: 450px;
+  min-height: 500px;
   align-items: center;
   justify-content: space-between;
 }
 ul {
-  margin-top: 50px;
   font-size: 30px;
 }
 li {
