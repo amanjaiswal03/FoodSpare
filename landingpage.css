@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 body {
   font-family:  Helvetica, sans-serif;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -27,6 +28,7 @@ body {
     background-image: url(pics/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     height: 550px;
     color: white;
 }
@@ -54,11 +56,18 @@ body {
 }
 
 .content1 {
-  margin-top: 50px;
+  display: flex;
+  max-height: 450px;
+  align-items: center;
+  justify-content: center;
 }
 
 .content2 {
+  display: flex;
   background-color: #FAFAFA;
+  height: 450px;
+  align-items: center;
+  justify-content: space-between;
 }
 ul {
   margin-top: 50px;
@@ -116,3 +125,7 @@ button {
  a {
    color: black;
  }
+
+.problem-pic{
+  padding-left: 90px;
+}
