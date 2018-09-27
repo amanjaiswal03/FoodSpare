@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 65px;
     align-items: center;
     border: 2px solid grey;
     box-shadow: 1px 0px 1px;
@@ -37,7 +38,7 @@ button {
 }
 .sign-up {
     padding: 10px 20px;
-    background-color: springgreen;
+    background-color: #12C237;
     font-size: 22px;
     color: white;
 }

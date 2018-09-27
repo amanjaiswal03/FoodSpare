@@ -17,10 +17,9 @@ body {
 /*Change logo*/
 .topnavlogo {
     vertical-align: top;
-    width: 50px;
+    width: 120px;
     height: 50px;
     padding: 0px;
-    margin-left: 100px;
 }
 /*Change opener*/
 .opener {
@@ -28,13 +27,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-  }
+    color: white;
+}
+  
 .btn1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: springgreen;
+  color: white;
+  background-color: #12C237;
+  padding: 20px;
   font-size: 22px;
   margin-top: 345px;
   margin-left: 45px;
@@ -46,7 +45,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%; -50%;)
 }
 
 .content1 {
@@ -84,24 +82,24 @@ li {
 nav{
   text-align: center;
 }
+
 button {
   margin: 0 10px;
   font-size: 17px;
   padding: 10px 10px;
-  background-color: white;
   border: none;
   cursor: pointer;
   color: black;
 }
 
-.btn{
+.btn {
   padding: 20px;
-  background-color: springgreen;
+  background-color: #12C237;
   font-size: 22px;
   margin: 75px 150px;
-
+  color: white;
 }
-#sign-up{
+#sign-up {
   display: flex;
   flex: 1;
   justify-content: center;
