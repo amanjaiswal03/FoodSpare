@@ -17,15 +17,17 @@ database.once("value").then(function(snapshot){
             var val = data.val();
             content += '<table>'  
             content += '<th> Attribute of Food </th>';
+            content += '<th> Pick up date </th>';
             content += '<th> Pick up time </th>';
-            content += '<th> Pick up place </th>';
             content += '<th> Portion </th>'
+            content += '<th> Pick up place </th>'
             content += '<th rowspan = 2> <button> Add to basket </button> </th>'
             content +='<tr>'; 
             content += '<td>' + val.foodClass + '  </td>';
             content += '<td>' + val.pickupDate + '  </td>';
             content += '<td>' + val.pickupTime+ '  </td>';
             content += '<td>' + val.portion + '  </td>';
+            content += '<td>' + val.location + '  </td>';
             content += '</tr>';
             content += '</table>'
             console.log(content);

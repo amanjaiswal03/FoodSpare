@@ -26,9 +26,10 @@ function submitForm(e){
     var portion = getInputVal('portion');
     var pickupDate = getInputVal('date');
     var pickupTime = getInputVal('time');
-
+    var location = getInputVal('location')
     //save datas
-    saveDatas(foodClass, portion, pickupDate, pickupTime);   
+    saveDatas(foodClass, portion, pickupDate, pickupTime, location);
+    window.alert("Thank you for donating!! You make this world a better place!")
 }
 
 // function to get get form values
@@ -38,12 +39,13 @@ function getInputVal(id){
 
 // save datas to firebase
 
-function saveDatas(foodClass, portion, pickupDate, pickupTime){
+function saveDatas(foodClass, portion, pickupDate, pickupTime, location){
     var newInventoryRef = inventoryRef.push();
     newInventoryRef.set({
         foodClass: foodClass,
         portion: portion,
         pickupDate: pickupDate,
-        pickupTime: pickupTime
+        pickupTime: pickupTime,
+        location: location
     })
 }

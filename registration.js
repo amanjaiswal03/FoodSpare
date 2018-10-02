@@ -13,13 +13,11 @@ var config = {
 
 var dataRef = firebase.database().ref('data');
 
-document.getElementById('signupForm').reset();
 // Listen for form submit
 
-document.getElementById('signupForm').addEventListener('submit', submitForm);
+document.getElementById('sign-up').addEventListener('click', submitForm);
 
-function submitForm(e){
-    e.preventDefault();
+function submitForm(){
 
     //  Get values
     var name = getInputVal('name');
@@ -27,18 +25,21 @@ function submitForm(e){
     var password = getInputVal('password');
     var organization = getInputVal('organization');
     var website = getInputVal('website');
-
-    //authenticate with email and password 
-        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ...
-            window.alert("Error : " + errorCode + errorMessage);
-            window.stop();
-        });
-    //save datas
-    saveDatas(name, email, password, organization, website);   
+   // authenticate with email and password 
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(
+        function(){
+            window.alert("Congratulation!! you are registered!!")
+            window.location = "donator_page.html";
+        }
+    ).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+        window.alert("Error : " + errorCode + errorMessage);
+    });
+    saveDatas(name, email, password, organization, website);
+      
 }
 
 // function to get get form values
@@ -55,6 +56,6 @@ function saveDatas(name, email, password, organization, website){
         email: email,
         password: password,
         organization: organization,
-        website: website
+        website: website,
     })
 }
