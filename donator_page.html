@@ -4,26 +4,27 @@
         <title> FOODSPARE | DONATE </title>
         <link rel = "stylesheet" type = "text/css" href = "donator_page.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
     </head>
     <body>
-        <div class = "container-fluid">
+        <div class = "container-fluid ">
             <div class = "nav">
                 <a href = "index.html"><button class = "btn"> Home </button></a>
                 <button class = "btn"> Basket </button>
+                <a href = "donation_page.html"><button class = "btn">Donate Food</button></a>
                 <a href = "index.html"><button class = "btn"> Log Out </button></a>
                 <img class ="topnavlogo" src="pics/logo2.png" alt="logo"></div>
             </div>
             <div class = "main">
                 <input type = "text" placeholder = "Search: Categories">
-                <form>
-                    <table>
-                        <th> </th>
-                    </table>
-                </form>
+                <div id = "inventory-table">
+                
+                </div>
             </div>
         </div>
-        <script src= "fireBase.js"></script>
-        <script src = "login.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src = "donator_page.js"></script>
     </body>
 </html>
