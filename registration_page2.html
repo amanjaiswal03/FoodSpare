@@ -4,7 +4,8 @@
         <title> Register | FoodSpare </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel = "stylesheet" type = "text/css" href = "registration_page.css">
-
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        
     </head>
     <body>
         <div class = "nav row">
@@ -14,24 +15,26 @@
             <div class = "col-lg-6"><img class ="topnavlogo" src="pics/logo2.png" style = "width: 100px; display: flex; justify-content: flex-end" alt="logo" > </div>
         </div>
         <div class = "container-fluid form">
-        <form action= "/submit">
+        <form id = "signupForm" action = "donator_page.html">
             <h2>Register as Organization</h2>
             <fieldset>
               <div class='inline'>
-              Your Name:<br><input type = "text" placeholder= " type in your name..." class = "name"><br><br>
-              Your Adress:<br> <input type = "text" placeholder= " type in your adress..." class = "adress"><br><br>
-              Your Website:<br> <input type = "text" placeholder = " type in your website..." class = "website"><br><br>
-            </div>
-            <div class='inline'>
-              Type of Organization: <br><input type = "text" placeholder = " type in organization-type..." class = "organization"><br><br>
-              Your E-Mail: <br><input type = "text" placeholder = " type in e-mail..." class = "e-mail"><br><br>
-              Your Password: <br><input type = "text" placeholder = " type in password..." class = "password"><br><br>
-            </div>
+                Your Name:<br><input type = "text" placeholder= " type in your name..." class = "name" id = "name"><br><br>
+                Your Address:<br> <input type = "text" placeholder= " type in your address..." class = "adress" id = "address"><br><br>
+                Your Website:<br> <input type = "text" placeholder = " type in your website..." class = "website" id = "website"><br><br>
+                </div>
+                <div class='inline'>
+                    Type of Organization: <br><input type = "text" placeholder = " type in organization-type..." class = "organization" id = "organization"><br><br>
+                    Your E-Mail: <br><input type = "email" placeholder = " type in e-mail..." class = "e-mail" id = "e-mail"><br><br>
+                    Your Password: <br><input type = "password" placeholder = " type in password..." class = "password" id = "password"><br><br>
+                </div>
+                <button class ="sign-up" id = "sign-up"> Sign up now! </button>
             </fieldset>
-            <button class = "sign-up"> Sign up now! </button>
+            
         </form>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src = "registration.js"></script>
     </body>
     </div>
 </html>

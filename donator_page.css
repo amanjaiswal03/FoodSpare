@@ -7,12 +7,13 @@
     height: 60px;
     border: 1px solid grey;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .btn {
-    margin: 10px 10px;
-    padding: 40px 10px;
+    margin: 0px 10px;
+    padding: 0px 0px;
     border: none;
     size: 30px;
     color: black;
@@ -20,8 +21,14 @@
 
 .main {
     margin-top: 30px;
+    margin-left: 10px;
 }
 
 input {
     border-radius: 10%;
+}
+
+img {
+    width: 20%;
+    height: 50px;
 }

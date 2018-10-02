@@ -10,11 +10,13 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  
+  position: fixed;
+  z-index: 1;
   box-shadow: 1px 0px 1px;
   font-size: 17px;
   width: 100%;
   background-color: white;
+  overflow: 
 }
 /*Change logo*/
 .topnavlogo {
@@ -28,9 +30,10 @@ body {
     background-image: url(pics/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    width: auto;
     height: 550px;
     color: white;
+
 }
 .opentext {
     font-size: 65px;
