@@ -22,11 +22,10 @@ var personal = '';
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser){
         console.log(firebaseUser);
-        personal += 'Email: ' + firebaseUser.email;
+        personal += '<div> Email: ' + '<span id = email>' + firebaseUser.email + '</span></div>';
     }
     $('#personal-details').append(personal);
 })
-
 //Reference user data collection
 
 var inventoryRef = firebase.database().ref('inventory');
@@ -44,9 +43,10 @@ function submitForm(e){
     var portion = getInputVal('portion');
     var pickupDate = getInputVal('date');
     var pickupTime = getInputVal('time');
-    var location = getInputVal('location')
+    var location = getInputVal('location');
+    var email = document.getElementById('email').innerHTML;
     //save datas
-    saveDatas(foodClass, portion, pickupDate, pickupTime, location);
+    saveDatas(foodClass, portion, pickupDate, pickupTime, location, email);
     window.alert("Thank you for donating!! You make this world a better place!")
 }
 
@@ -57,13 +57,14 @@ function getInputVal(id){
 
 // save datas to firebase
 
-function saveDatas(foodClass, portion, pickupDate, pickupTime, location){
+function saveDatas(foodClass, portion, pickupDate, pickupTime, location, email){
     var newInventoryRef = inventoryRef.push();
     newInventoryRef.set({
         foodClass: foodClass,
         portion: portion,
         pickupDate: pickupDate,
         pickupTime: pickupTime,
-        location: location
+        location: location,
+        email: email
     })
 }
