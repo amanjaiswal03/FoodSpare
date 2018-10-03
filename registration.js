@@ -25,6 +25,8 @@ function submitForm(){
     var password = getInputVal('password');
     var organization = getInputVal('organization');
     var website = getInputVal('website');
+    var content = '';
+
    // authenticate with email and password 
     firebase.auth().createUserWithEmailAndPassword(email, password).then(
         function(){
@@ -36,7 +38,8 @@ function submitForm(){
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
-        window.alert("Error : " + errorCode + errorMessage);
+        window.alert("Error : " +  errorMessage);
+        window.reset;
     });
     saveDatas(name, email, password, organization, website);
       
