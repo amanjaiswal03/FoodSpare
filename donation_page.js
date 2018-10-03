@@ -9,6 +9,26 @@ var config = {
   };
   firebase.initializeApp(config);
 
+// sign-out user
+   document.getElementById('logout').addEventListener('click', e => {
+    firebase.auth().signOut();
+    window.location = "index.html";
+});
+
+// retrieving user details 
+
+var personal = '';
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser){
+        console.log(firebaseUser);
+        personal += "Name: "+ firebaseUser.displayName;
+        personal += "<br> <br>"
+        personal += 'Email: ' + firebaseUser.email;
+    }
+    $('#personal-details').append(personal);
+})
+
 //Reference user data collection
 
 var inventoryRef = firebase.database().ref('inventory');

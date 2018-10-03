@@ -9,6 +9,26 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  // sign-out user
+  document.getElementById('logout').addEventListener('click', e => {
+      firebase.auth().signOut();
+      window.location = "index.html";
+  });
+
+// retrieving user details 
+
+  var personal = '';
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (firebaseUser){
+          console.log(firebaseUser);
+          personal += "Name: " + firebaseUser.displayName + "<br> <br>"
+          personal += 'Email: ' + firebaseUser.email;
+      }
+      $('#personal-details').append(personal);
+  })
+  
+
 var database = firebase.database().ref("inventory").orderByKey();
 database.once("value").then(function(snapshot){
     if(snapshot.exists()){
@@ -30,7 +50,6 @@ database.once("value").then(function(snapshot){
             content += '<td>' + val.location + '  </td>';
             content += '</tr>';
             content += '</table>'
-            console.log(content);
         });
         $('#inventory-table').append(content);      
     }

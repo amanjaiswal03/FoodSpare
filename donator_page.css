@@ -39,4 +39,20 @@ table {
     width: 900px;
     margin: 20px 20px;
 }
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
 
+.side {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+#logout{
+    margin-top : 20px;
+}

@@ -6,15 +6,32 @@ body {
 h1 {
     text-align: center;
 }
+.screen {
+  display: flex;
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.4)), url("pics/fruits.jpeg");
+  background-size: cover;
+  height: 100vh;
+  justify-content: space-between;
+
+}
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 300px;
   width: auto;
   height: 100vh;
-  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.4)), url("pics/fruits.jpeg");
-  background-size: cover;
+  
+}
+.side {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 10px;
+  justify-content: center;
+  margin-left: 300px;
+  background-color: white !important;
 }
 .topnav  {
     display: flex;
@@ -54,35 +71,19 @@ form {
 }
 
 
-/* Split the screen in half */
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
-    left: 250px;
-  }
-  
-  /* Control the right side */
-  .right {
-    right: -150px;
-  }
   
   a {
     color: black;
   }
 
-  button {
+  .btn {
     border: none;
   }
 
   #location {
     margin-left: 23px;
+  }
+
+  #logout {
+    margin-top: 20px;
   }

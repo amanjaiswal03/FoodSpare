@@ -5,15 +5,16 @@
   <link href="donation_page.css" type="text/css" rel="stylesheet">
   <title>Foodspare - Save Food. Save Lives.</title>
   <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
 <div class="topnav">
-    <div class = "col-lg-3"><a href = "index.html"><button> Home </button></a></div>
-    <div class = "col-lg-3"><a href = "donator_page.html"><button> Receive Food </button></a></div>
-    <div class = "col-lg-3"><a href = "index.html"><button> Log out </button></a></div>
-    <div class = "col-lg-3"><img class ="topnavlogo" src="pics/logo2.png" alt="logo"></div>
+    <div class = "col-lg-5"><a href = "index.html"><button class = "btn"> Home </button></a></div>
+    <div class = "col-lg-5"><a href = "donator_page.html"><button class = "btn"> Receive Food </button></a></div>
+    <div class = "col-lg-5"><img class ="topnavlogo" src="pics/logo2.png" alt="logo"></div>
 </div>
+<div class = "screen">
 <div class = "main">
   <h1> Donation Process </h1>
   <form id = "inventory">
@@ -59,6 +60,10 @@
     <br>
   <input type="submit">
 </form>
+</div>
+<div class = "side" id = "personal-details">
+  <button id = "logout"> Log Out </button>
+</div>
 </div>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 <script src = "donation_page.js"></script>
