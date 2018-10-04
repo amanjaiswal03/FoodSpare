@@ -22,7 +22,7 @@ var personal = '';
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser){
         console.log(firebaseUser);
-        personal += '<div> Email: ' + '<span id = email>' + firebaseUser.email + '</span></div>';
+        personal += '<div> User: ' + '<span id = email>' + firebaseUser.email + '</span></div>';
     }
     $('#personal-details').append(personal);
 })

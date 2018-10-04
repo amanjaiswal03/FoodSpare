@@ -22,7 +22,7 @@ var config = {
   firebase.auth().onAuthStateChanged(firebaseUser => {
       if (firebaseUser){
           console.log(firebaseUser);
-          personal += 'Email: ' + firebaseUser.email;
+          personal += 'User: ' + firebaseUser.email;
       }
       $('#personal-details').append(personal);
   })

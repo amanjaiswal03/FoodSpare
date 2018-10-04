@@ -48,6 +48,7 @@ table {
 .side {
     border: 1px solid black;
     display: flex;
+    position: fixed;
     flex-direction: column-reverse;
     padding: 10px 10px;
     justify-content: center;
