@@ -16,13 +16,16 @@ body {
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 65px;
     align-items: center;
-    border: 2px solid grey;
-    box-shadow: 1px 0px 1px;
     font-size: 17px;
     color: black;
+}
+
+.topnavlogo {
+    width: 120px !important;
+    height: 50px !important;
 }
 h2 {
     font-weight: bold;
