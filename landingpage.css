@@ -31,12 +31,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
+    word-wrap: none;
     height: 550px;
     color: white;
 
 }
 .opentext {
     font-size: 65px;
+    word-wrap: none !important;
     padding-left: 160px;
     padding-top: 130px;
 }
