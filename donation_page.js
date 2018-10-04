@@ -12,7 +12,7 @@ var config = {
 // sign-out user
    document.getElementById('logout').addEventListener('click', e => {
     firebase.auth().signOut();
-    window.location = "index.html";
+    window.location = "login.html";
 });
 
 // retrieving user details 
@@ -39,6 +39,7 @@ function submitForm(e){
     e.preventDefault();
 
     //  Get values
+    var form = document.getElementById('inventory');
     var foodClass = getInputVal('foodClass');
     var portion = getInputVal('portion');
     var pickupDate = getInputVal('date');
@@ -47,7 +48,9 @@ function submitForm(e){
     var email = document.getElementById('email').innerHTML;
     //save datas
     saveDatas(foodClass, portion, pickupDate, pickupTime, location, email);
-    window.alert("Thank you for donating!! You make this world a better place!")
+    window.alert("Thank you for donating!! You make this world a better place!");
+    form.reset();
+
 }
 
 // function to get get form values

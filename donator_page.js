@@ -12,7 +12,7 @@ var config = {
   // sign-out user
   document.getElementById('logout').addEventListener('click', e => {
       firebase.auth().signOut();
-      window.location = "index.html";
+      window.location = "login.html";
   });
 
 // retrieving user details 
