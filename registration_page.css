@@ -27,6 +27,7 @@ body {
 h2 {
     font-weight: bold;
     padding-top: 40px;
+    padding-left: 100px;
 }
 button {
     font-size: 17px;
@@ -41,6 +42,7 @@ button {
     background-color: #12C237;
     font-size: 22px;
     color: white;
+
 }
 
 .form {
@@ -53,11 +55,10 @@ button {
 fieldset {
     display: inline-block;
     font-size: 25px;
-    padding: 50px;
+    padding: 40px 250px 200px 100px;
 }
 .inline {
     display: inline-block;
-      margin-left: 40px;
 }
 
 input {
