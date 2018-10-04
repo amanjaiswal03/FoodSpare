@@ -43,12 +43,12 @@ database.once("value").then(function(snapshot){
             content += '<th> Pick up place </th>'
             content += '<th rowspan = 2> <button> Add to basket </button> </th>'
             content +='<tr>'; 
-            content += '<td>' + val.email + '  </td>';
+            content += '<td class = "fixed">' + val.email + '  </td>';
             content += '<td>' + val.foodClass + '  </td>';
             content += '<td>' + val.pickupDate + '  </td>';
             content += '<td>' + val.pickupTime+ '  </td>';
             content += '<td>' + val.portion + '  </td>';
-            content += '<td>' + val.location + '  </td>';
+            content += '<td class = "fixed2">' + val.location + '  </td>';
             content += '</tr>';
             content += '</table>'
         });

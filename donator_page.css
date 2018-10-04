@@ -37,9 +37,19 @@ input {
 table {
     border: 5px solid #63C02D;
     background-color: white !important;
-    width: 950px;
+    width: 1050px;
     margin: 20px 20px;
     padding: 10px 10px;
+}
+
+.fixed {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.fixed2 {
+    min-width: 100px;
+    max-width: 100px;
 }
 .screen {
     display: flex;
@@ -63,6 +73,7 @@ table {
     background-color: white !important;
     flex-direction: column-reverse;
     padding: 10px 10px;
+    max-width: 200px;
     justify-content: center;
     align-items: center;
 }
