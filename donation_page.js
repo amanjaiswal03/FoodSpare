@@ -48,7 +48,12 @@ function submitForm(e){
     var email = document.getElementById('email').innerHTML;
     //save datas
     saveDatas(foodClass, portion, pickupDate, pickupTime, location, email);
-    window.alert("Thank you for donating!! You make this world a better place!");
+    
+    document.querySelector('.alert').style.display = 'block';
+    //Hide alert for 3 seconds
+    setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+    }, 3000);
     form.reset();
 
 }

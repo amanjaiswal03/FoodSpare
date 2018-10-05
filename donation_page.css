@@ -99,5 +99,14 @@ form {
     margin-top: 20px;
     width: 90px;
     border-radius: 10%;
-    
+  }
+
+  .alert {
+    display: none;
+    border: none;
+    color: green;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 30px;
   }
