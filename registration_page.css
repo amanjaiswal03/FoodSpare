@@ -85,3 +85,14 @@ form {
   flex-direction: column;
   align-items: center;
 }
+
+.alert {
+    display: none;
+    border: none;
+    color: green;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 30px;
+    text-align: center;
+  }

@@ -30,8 +30,12 @@ function submitForm(){
    // authenticate with email and password 
     firebase.auth().createUserWithEmailAndPassword(email, password).then(
         function(){
-            window.alert("Congratulation!! you are registered!!")
-            window.location = "donator_page.html";
+            document.querySelector('.alert').style.display = 'block';
+            //Hide alert for 3 seconds
+            setTimeout(function(){
+             document.querySelector('.alert').style.display = 'none';
+             window.location = "donator_page.html";
+            }, 2000);
         }
     ).catch(function(error) {
         // Handle Errors here.
@@ -42,7 +46,7 @@ function submitForm(){
         window.reset;
     });
     saveDatas(name, email, password, organization, website);
-      
+
 }
 
 // function to get get form values
