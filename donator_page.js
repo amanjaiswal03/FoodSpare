@@ -28,7 +28,7 @@ var config = {
   })
   
 
-var database = firebase.database().ref("inventory").orderByKey();
+var database = firebase.database().ref("inventory").orderByChild("pickupDate");
 database.once("value").then(function(snapshot){
     if(snapshot.exists()){
         var content = '';
