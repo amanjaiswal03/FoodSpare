@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+}
+
+.topnavlogo {
+    width: 120px !important;
+    height: 50px !important;
+}
+h2 {
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+button {
+    font-size: 17px;
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.sign-up {
+    padding: 10px 20px;
+    background-color: #12C237;
+    font-size: 22px;
+    color: white;
+
+}
+
+.form {
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.4)), url("pics/fruits.jpeg");
+    background-size: cover;
+    height: 100%;
+    border: 1px solid black;
+}
+
+fieldset {
+    display: inline-block;
+    font-size: 25px;
+    padding: 40px 250px 200px 100px;
+}
+.inline {
+    display: inline-block;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+}
+.topnavlogo {
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+a {
+    color: black;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert {
+    display: none;
+    border: none;
+    color: green;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 30px;
+    text-align: center;
+  }

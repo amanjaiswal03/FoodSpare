@@ -1,0 +1,112 @@
+*{
+  margin:0 0;
+}
+body {
+    font-family:  Verdana;
+    width: 100%;
+  }
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.screen {
+  display: flex;
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.4)), url("pics/fruits.jpeg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300px;
+  width: auto;
+  height: 100vh;
+  
+}
+.side {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+  width: 280px;
+  height: 150px;
+}
+
+.nav  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+  font-size: 17px !important;
+  color: black;
+}
+
+.topnavlogo {
+      width: 120px;
+      height: 50px;
+      
+  }
+
+.donation {
+    width: 480px;
+    border: 7px solid black;
+    padding: 40px;
+    margin: 100px auto;
+    display: block;
+    }
+
+.dropdown {
+    display: block;
+}
+
+form {
+  border: 3px solid black;
+  width: 500px;
+  background-color: white !important;
+  padding: 10px 10px;
+}
+
+  a {
+    color: black;
+  }
+
+  .btn {
+    border: none;
+    font-size: 17px;
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #location {
+    margin-left: 23px;
+  }
+
+  #logout {
+    margin-top: 20px;
+    width: 90px;
+    border-radius: 10%;
+  }
+
+  .alert {
+    display: none;
+    border: none;
+    color: green;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 30px;
+  }

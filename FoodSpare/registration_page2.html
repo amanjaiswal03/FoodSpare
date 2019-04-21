@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register | FoodSpare </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "registration_page.css">
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div class = "nav">
+            <a href = "index.html"><button> Home </button></a>
+            <a href = "registration_page2.html"><button> Register as Organization </button></a>
+            <a href = "registration_page1.html"><button> Register as Donator </button></a>
+            <img class ="topnavlogo" src="pics/logo2.png"  alt="logo"> 
+        </div>
+
+        </div>
+        <div class = "container-fluid form">
+                <div class = "alert">Congratulation!! you are registered!!</div>
+        <div id = "signupForm">
+            <h2> Register as Organization</h2>
+            <fieldset>
+              <div class='inline'>
+                Your Name:<br><input type = "text" placeholder= " type in your name..." class = "name" id = "name" required><br><br>
+                Your Address:<br> <input type = "text" placeholder= " type in your address..." class = "adress" id = "address"><br><br>
+                Your Website:<br> <input type = "text" placeholder = " type in your website..." class = "website" id = "website"><br><br>
+                </div>
+                <div class='inline'>
+                    Type of Organization: <br><input type = "text" placeholder = " type in organization-type..." class = "organization" id = "organization" required><br><br>
+                    Your E-Mail: <br><input type = "email" placeholder = " type in e-mail..." class = "e-mail" id = "e-mail"><br><br>
+                    Your Password: <br><input type = "password" placeholder = " type in password..." class = "password" id = "password"><br><br>
+                </div>
+                <button class ="sign-up" id = "sign-up" > Sign up now! </button>
+            </fieldset>
+            
+        </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src = "registration.js"></script>
+    </body>
+    </div>
+</html>
